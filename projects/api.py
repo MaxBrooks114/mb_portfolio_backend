@@ -7,5 +7,5 @@ from .serializers import ProjectSerializer
 
 class ProjectViewSet(viewsets.ModelViewSet):
 
-    queryset = Project.objects.filter(show=True)
+    queryset = Project.objects.all()
     serializer_class = ProjectSerializer

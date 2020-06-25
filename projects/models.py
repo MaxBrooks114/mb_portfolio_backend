@@ -1,4 +1,5 @@
 from django.db import models
+from taggit.managers import TaggableManager
 
 # Create your models here.
 class Project(models.Model):
@@ -9,6 +10,7 @@ class Project(models.Model):
     demo = models.URLField(blank=True)
     image = models.ImageField(upload_to='photos/%Y/%m/%d')
     show = models.BooleanField(default=False)
+    stack = TaggableManager()
 
     def __str__(self):
         return self.name

@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'projects.apps.ProjectsConfig',
     'rest_framework',
+    'taggit',
+    'taggit_serializer',
    
 ]
 
